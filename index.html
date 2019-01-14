@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--Link to CSS-->
+    <link rel="stylesheet" href="main.css">
+    <title>FCC Survey Form</title>
+</head>
+
+<!--Actual code for the page-->
+
+<body>
+    <h1 id="title">FCC Survey Form</h1>
+    <div id="form-container">
+        <p id="description">Tell me more about your programming journey</p>
+        <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+            <fieldset id="details">
+                <legend>Your Details:</legend>
+                <div>
+                    <label id="name-label" for="name">Name: <input type="text" id="name" name="name" placeholder="Enter your name" />
+                    </label>
+                </div>
+                <div>
+                    <label id="email-label" for="email">Email: <input type="email" id="email" name="email" placeholder="Enter your email" />
+                    </label>
+                </div>
+                <div>
+                    <label id="number-label" for="age">Age: <input type="number" id="number" min="1" max="125" name="age"
+                            placeholder="Enter your age" />
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset id="journey">
+                <legend>Your Journey:</legend>
+                <div>
+                    <label id="dropdown" for="dropdown">What are you doing outside of programming at the moment?</label>
+                    <select id="dropdown" name="dropdown">
+                        <option value="student">Student</option>
+                        <option value="unemployed">Unemployed</option>
+                        <option value="part time">Working Part-Time</option>
+                        <option value="full time">Working Full-Time</option>
+                        <option value="other">Other</option>
+                        <option value="not said">Prefer not to say</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Do you plan to try and get a job in programming when you've finished studying?</label>
+                    <br />
+                    <label for="jobyes"><input type="radio" name="radio" value="yes" id="jobyes" />Yes</label>
+                    <label for="jobno"><input type="radio" name="radio" value="no" id="jobno" />No</label>
+                    <label for="jobunsure"><input type="radio" name="radio" value="unsure" id="jobunsure" />Unsure</label>
+                </div>
+                <div>
+                    <label>What topics are you studying/do you plan to study?</label>
+                    <br />
+                    <input type="checkbox" name="languages" value="html" id="html"><label for="html">HTML</label>
+                    <input type="checkbox" name="languages" value="css" id="css"><label for="css">CSS</label>
+                    <input type="checkbox" name="languages" value="js" id="js"><label for="js">JavaScript</label>
+                    <input type="checkbox" name="languages" value="python" id="python"><label for="python">Python</label>
+                    <input type="checkbox" name="languages" value="interview" id="interview"><label for="interview">Interview
+                        Help</label>
+                    <input type="checkbox" name="languages" value="projects" id="projects"><label for="projects">Work
+                        on Projects</label>
+                </div>
+            </fieldset>
+            <div id=textbox>
+                <label for="comments">Any Comments?</label>
+            </div>
+            <div id=textbox>
+                <textarea id="comments" name="comments">Enter your comments here...</textarea>
+            </div>
+            <div>
+                <input type="submit" name="submit" value="Submit Now" />
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+
+</html>
